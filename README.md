@@ -11,3 +11,7 @@ Para isso eles estão solicitando a nossa ajuda como desenvolvedores para criar 
 - Um rodapé com formulário para contato e outras informações relevantes.
 - Menu administrador para eles conseguirem adicionar, editar, buscar ou eliminar produtos da loja.
 É muito importante que o site seja responsivo para dar aos clientes a facilidade de comprar através de dispositivos mobiles.
+
+Importante: Todas as imagens estarão disponíveis no [Figma](https://www.figma.com/file/37mxfiCn6LUAqn878o9NkE/AluraGeek---Challenge-(Copy)?node-id=0%3A1) para fazer download.
+
+
