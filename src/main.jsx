@@ -1,11 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import Home from "./assets/Home";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-import "./index.css";
+import './index.css';
+import AppRouter from './Routes';
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<React.StrictMode>
+		<AppRouter />
+	</React.StrictMode>
 );
