@@ -16,12 +16,3 @@ select:focus {
 	border: 0 none;
 	outline: 0;
 }
-
-/* Classes do FcSearch - /NAV */
-.aberto {
-	@apply hidden tablet:hidden;
-}
-
-.fechado {
-	@apply block tablet:hidden;
-}

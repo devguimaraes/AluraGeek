@@ -35,7 +35,7 @@ export default function MenuNav() {
 			</button>
 			<FcSearch
 				size={24}
-				className={openInput ? 'aberto' : 'fechado'}
+				className={openInput ? 'hidden tablet:hidden' : 'block tablet:hidden'}
 				onClick={() => {
 					setOpenInput(!openInput);
 				}}
