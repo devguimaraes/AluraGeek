@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FcSearch } from 'react-icons/fc';
 import logo from '../../../public/img/Logo_PNG.png';
 import InputSearchMobile from './InputSearchMobile';
@@ -9,7 +10,9 @@ export default function MenuNav() {
 
 	return (
 		<div className="flex flex-wrap justify-between items-center p-4 gap-5 bg-white h-[72px] laptop:px-[152px] laptop:py-10 ">
-			<img src={logo} alt="logo Alura Geek" className="laptop:w-[120px]" />
+			<Link to="/">
+				<img src={logo} alt="logo Alura Geek" className="laptop:w-[120px]" />
+			</Link>
 
 			{openInput && <InputSearchMobile setOpenInput={setOpenInput} />}
 
@@ -35,7 +38,6 @@ export default function MenuNav() {
 				className={openInput ? 'aberto' : 'fechado'}
 				onClick={() => {
 					setOpenInput(!openInput);
-					console.log(openInput);
 				}}
 			/>
 		</div>
