@@ -1,8 +1,27 @@
 @import 'reset-css';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
 	scroll-behavior: smooth;
+	font-family: 'Raleway', sans-serif;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+	box-shadow: 0 0 0 0;
+	border: 0 none;
+	outline: 0;
+}
+
+/* Classes do FcSearch - /NAV */
+.aberto {
+	@apply hidden tablet:hidden;
+}
+
+.fechado {
+	@apply block tablet:hidden;
 }
