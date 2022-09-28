@@ -9,7 +9,13 @@ export default function MenuNav() {
 	const [openInput, setOpenInput] = useState(false);
 
 	return (
-		<div className="flex flex-wrap justify-between items-center p-4 gap-5 bg-white h-[72px] laptop:px-[152px] laptop:py-10 ">
+		<div
+			className={
+				openInput
+					? 'flex flex-wrap justify-between items-center p-4 gap-5 bg-white h-[200px] laptop:px-[152px] laptop:py-10 '
+					: 'flex flex-wrap justify-between items-center p-4 gap-5 bg-white h-[72px] laptop:px-[152px] laptop:py-10 '
+			}
+		>
 			<Link to="/">
 				<img src={logo} alt="logo Alura Geek" className="laptop:w-[120px]" />
 			</Link>
@@ -29,7 +35,7 @@ export default function MenuNav() {
 			</div>
 			<button
 				type="button"
-				className="w-32 h-10 box-border border font-bold text-azul-botao text-sm border-azul-botao"
+				className="w-32 h-10 bg-white box-border border font-bold text-azul-botao text-sm border-azul-botao"
 			>
 				Login
 			</button>
