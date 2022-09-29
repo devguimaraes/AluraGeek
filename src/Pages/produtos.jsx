@@ -1,3 +1,11 @@
-export default function Produtos() {
-	return <h2>Produos</h2>;
+import MenuNav from '../assets/Components/Nav';
+import Produtos from '../assets/Components/Produtos';
+
+export default function PageProdutos() {
+	return (
+		<>
+			<MenuNav loginAtivo />
+			<Produtos />
+		</>
+	);
 }

@@ -6,7 +6,7 @@ import { FcSearch } from 'react-icons/fc';
 import logo from '/img/Logo_PNG.png';
 import InputSearchMobile from './InputSearchMobile';
 
-export default function MenuNav() {
+export default function MenuNav({ loginAtivo }) {
 	// Abre o input search ao clicar no icone
 	const [openInput, setOpenInput] = useState(false);
 
@@ -21,9 +21,7 @@ export default function MenuNav() {
 			<Link to="/">
 				<img src={logo} alt="logo Alura Geek" className="laptop:w-[120px]" />
 			</Link>
-
 			{openInput && <InputSearchMobile setOpenInput={setOpenInput} />}
-
 			<div className="hidden bg-background-input rounded-lg items-center px-2 py-2 tablet:flex">
 				<input
 					className="bg-background-input gap-2 mx-auto rounded-lg w-54 text-[14px] font-semibold tablet:w-64 laptop:w-[400px]"
@@ -35,9 +33,14 @@ export default function MenuNav() {
 				/>
 				<FcSearch size={24} />
 			</div>
+
 			<button
 				type="button"
-				className="w-32 h-10 bg-white box-border border font-bold text-azul-botao text-sm border-azul-botao"
+				className={
+					loginAtivo
+						? 'hidden'
+						: 'w-32 h-10 bg-white box-border border font-bold text-azul-botao text-sm border-azul-botao'
+				}
 			>
 				Login
 			</button>
