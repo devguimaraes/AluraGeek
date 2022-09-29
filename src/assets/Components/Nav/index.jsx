@@ -1,7 +1,9 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/no-absolute-path */
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FcSearch } from 'react-icons/fc';
-import logo from '../../../public/img/Logo_PNG.png';
+import logo from '/img/Logo_PNG.png';
 import InputSearchMobile from './InputSearchMobile';
 
 export default function MenuNav() {
@@ -13,7 +15,7 @@ export default function MenuNav() {
 			className={
 				openInput
 					? 'flex flex-wrap justify-between items-center p-4 gap-5 bg-white h-[200px] laptop:px-[152px] laptop:py-10 '
-					: 'flex flex-wrap justify-between items-center p-4 gap-5 bg-white h-[72px] laptop:px-[152px] laptop:py-10 '
+					: 'flex flex-wrap justify-between items-center p-4 gap-5 bg-white h-[72px] laptop:px-[152px] laptop:py-10 laptop:pb-20 '
 			}
 		>
 			<Link to="/">
@@ -22,7 +24,7 @@ export default function MenuNav() {
 
 			{openInput && <InputSearchMobile setOpenInput={setOpenInput} />}
 
-			<div className="hidden bg-background-input rounded-lg items-center px-2 py-2 tablet:flex ">
+			<div className="hidden bg-background-input rounded-lg items-center px-2 py-2 tablet:flex">
 				<input
 					className="bg-background-input gap-2 mx-auto rounded-lg w-54 text-[14px] font-semibold tablet:w-64 laptop:w-[400px]"
 					type="search"

@@ -1,5 +1,11 @@
-import MenuNav from '../../Components/Nav';
+import Header from '../../assets/Components/Header';
+import MenuNav from '../../assets/Components/Nav';
 
 export default function Home() {
-	return <MenuNav />;
+	return (
+		<header>
+			<MenuNav />
+			<Header />
+		</header>
+	);
 }
