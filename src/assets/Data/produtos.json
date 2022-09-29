@@ -1,0 +1,56 @@
+[
+	{
+		"nome": "Darth Lego",
+		"imagem": "/img/starsWars/darthBlack_lego.png",
+		"preco": 60.0,
+		"category": {
+			"id": 0,
+			"label": "Star Wars"
+		}
+	},
+	{
+		"nome": "Darth Robot",
+		"imagem": "/img/starsWars/darthBlackRobots_lego.png",
+		"preco": 60.0,
+		"category": {
+			"id": 0,
+			"label": "Star Wars"
+		}
+	},
+	{
+		"nome": "Skill",
+		"imagem": "/img/starsWars/skill_starsWars.png",
+		"preco": 60.0,
+		"category": {
+			"id": 0,
+			"label": "Star Wars"
+		}
+	},
+	{
+		"nome": "Skill Robot",
+		"imagem": "/img/starsWars/skillRobots_starsWars.png",
+		"preco": 60.0,
+		"category": {
+			"id": 0,
+			"label": "Star Wars"
+		}
+	},
+	{
+		"nome": "Yoda",
+		"imagem": "/img/starsWars/yoda_starsWars.png",
+		"preco": 60.0,
+		"category": {
+			"id": 0,
+			"label": "Star Wars"
+		}
+	},
+	{
+		"nome": "Yoda Baby",
+		"imagem": "/img/starsWars/yodaBaby_starsWars.png",
+		"preco": 60.0,
+		"category": {
+			"id": 0,
+			"label": "Star Wars"
+		}
+	}
+]
