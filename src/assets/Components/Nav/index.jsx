@@ -14,8 +14,8 @@ export default function MenuNav() {
 		<div
 			className={
 				openInput
-					? 'flex flex-wrap justify-between items-center p-4 gap-5 bg-white h-[200px] laptop:px-[152px] laptop:py-10 '
-					: 'flex flex-wrap justify-between items-center p-4 gap-5 bg-white h-[72px] laptop:px-[152px] laptop:py-10 laptop:pb-20 '
+					? 'flex flex-wrap justify-between items-center p-4 tablet:pl-8 gap-5 bg-white h-[200px] laptop:px-[152px] laptop:py-10 '
+					: 'flex flex-wrap justify-between items-center p-4 tablet:pl-8 gap-5 bg-white h-[72px] laptop:px-[152px] laptop:py-10 laptop:pb-20 '
 			}
 		>
 			<Link to="/">
