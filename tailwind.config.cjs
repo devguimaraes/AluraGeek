@@ -12,7 +12,8 @@ module.exports = {
     extend: {
 			colors:{
 				'background-input': "#FFF5EE",
-				'azul-botao': '#2A7AE4'
+				'azul-botao': '#2A7AE4',
+				'corTituloProduto' : "#464646"
 			}
 		},
 		backgroundImage:{
