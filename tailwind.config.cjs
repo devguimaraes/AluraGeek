@@ -15,6 +15,11 @@ module.exports = {
 				'azul-botao': '#2A7AE4'
 			}
 		},
+		backgroundImage:{
+			"headerImage" : "url('/img/header_mobile.png')",
+			"headerImageTablet" : "url('/img/header_tablet.png')",
+
+		},
   },
   plugins: [],
 }
