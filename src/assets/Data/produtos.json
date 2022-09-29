@@ -52,5 +52,113 @@
 			"id": 0,
 			"label": "Star Wars"
 		}
+	},
+	{
+		"nome": "Controle Xbox",
+		"imagem": "/img/Console/controleXbox_console.png",
+		"preco": 60.0,
+		"category": {
+			"id": 1,
+			"label": "Console"
+		}
+	},
+	{
+		"nome": "X box",
+		"imagem": "/img/Console/xbox_console.png",
+		"preco": 60.0,
+		"category": {
+			"id": 1,
+			"label": "Console"
+		}
+	},
+	{
+		"nome": "Game Boy",
+		"imagem": "/img/Console/gameboy_console.png",
+		"preco": 60.0,
+		"category": {
+			"id": 1,
+			"label": "Console"
+		}
+	},
+	{
+		"nome": "Nitendo V - 1.0",
+		"imagem": "/img/Console/nitendoGame_console.png",
+		"preco": 60.0,
+		"category": {
+			"id": 1,
+			"label": "Console"
+		}
+	},
+	{
+		"nome": "PlayStation 5",
+		"imagem": "/img/Console/ps5_console.png",
+		"preco": 60.0,
+		"category": {
+			"id": 1,
+			"label": "Console"
+		}
+	},
+	{
+		"nome": "Nitendo Wii",
+		"imagem": "/img/Console/wii_console.png",
+		"preco": 60.0,
+		"category": {
+			"id": 1,
+			"label": "Console"
+		}
+	},
+	{
+		"nome": "Console Atari",
+		"imagem": "/img/diversos/atari_diversos.png",
+		"preco": 60.0,
+		"category": {
+			"id": 2,
+			"label": "Diversos"
+		}
+	},
+	{
+		"nome": "Camisa CNES",
+		"imagem": "/img/diversos/camisaCNES_diversos.png",
+		"preco": 60.0,
+		"category": {
+			"id": 2,
+			"label": "Diversos"
+		}
+	},
+	{
+		"nome": "Urso Picachu",
+		"imagem": "/img/diversos/picachu_diversos.png",
+		"preco": 60.0,
+		"category": {
+			"id": 2,
+			"label": "Diversos"
+		}
+	},
+	{
+		"nome": "Rádio Relógio",
+		"imagem": "/img/diversos/relogioAlarme_diversos.png",
+		"preco": 60.0,
+		"category": {
+			"id": 2,
+			"label": "Diversos"
+		}
+	},
+	{
+		"nome": "Sonic",
+		"imagem": "/img/diversos/sonic_diversos.png",
+		"preco": 60.0,
+		"category": {
+			"id": 2,
+			"label": "Diversos"
+		}
+	},
+	{
+		"nome": "Óculos VAR",
+		"imagem": "/img/diversos/var_diversos.png",
+		"preco": 60.0,
+		"category": {
+			"id": 2,
+			"label": "Diversos"
+		}
 	}
 ]

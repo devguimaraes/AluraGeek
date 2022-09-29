@@ -8,10 +8,7 @@ export default function Header() {
 				<h3 className="text-white text-base font-semibold tablet:text-[22px]">
 					Produtos selecionados com 33% de desconto
 				</h3>
-				<button
-					className="text-white bg-azul-botao text-sm font-semibold w-[119px] h-[40px] gap-2 rounded"
-					type="button"
-				>
+				<button className="botaoAzul" type="button">
 					Ver Consoles
 				</button>
 			</div>

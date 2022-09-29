@@ -16,3 +16,7 @@ select:focus {
 	border: 0 none;
 	outline: 0;
 }
+
+.botaoAzul {
+	@apply text-white bg-azul-botao text-sm font-semibold w-[119px] h-[40px] gap-2 px-4 rounded;
+}

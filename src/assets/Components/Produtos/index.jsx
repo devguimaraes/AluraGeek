@@ -1,22 +1,27 @@
 /* eslint-disable react/no-array-index-key */
 import { Link } from 'react-router-dom';
 import { FaChevronRight } from 'react-icons/fa';
-import produtos from '../../Data/produtos.json';
 
-export default function Produtos() {
-	const starWars = [...produtos];
+export default function Produtos({ itemProdutos, pageProdutos }) {
+	const itens = [...itemProdutos];
 
 	return (
 		<div className="flex flex-col p-4">
-			<div className="flex justify-between items-center pb-4">
-				<h2 className="text-2xl text-corTituloProduto font-bold">Star Wars</h2>
-				<div className="flex items-center gap-2  text-sm text-azul-botao font-bold">
-					<Link to="/produtos">Ver Tudo</Link>
-					<FaChevronRight className="text-azul-botao" />
-				</div>
+			<div className="flex justify-between items-center pb-4 tablet:px-10">
+				{!pageProdutos && (
+					<>
+						<h2 className="text-2xl text-corTituloProduto font-bold">
+							{itens[0].category.label}
+						</h2>
+						<div className="flex items-center gap-2  text-sm text-azul-botao font-bold">
+							<Link to="/produtos">Ver Tudo</Link>
+							<FaChevronRight className="text-azul-botao" />
+						</div>
+					</>
+				)}
 			</div>
 			<div className="flex justify-around flex-wrap gap-4">
-				{starWars.map((elemento, index) => (
+				{itens.map((elemento, index) => (
 					<div key={index}>
 						<img src={elemento.imagem} alt={elemento.nome} />
 						<h3 className="text-corTituloProduto text-sm font-normal pt-2">
