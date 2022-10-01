@@ -27,8 +27,10 @@ export default function Home() {
 						(produto) => produto.category.label === 'Diversos'
 					)}
 				/>
-				<Contato />
 			</main>
+			<footer>
+				<Contato />
+			</footer>
 		</>
 	);
 }

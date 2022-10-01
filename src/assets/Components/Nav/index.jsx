@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FcSearch } from 'react-icons/fc';
-import logo from '/img/Logo_PNG.png';
+import logo from '/img/logo.svg';
 import InputSearchMobile from './InputSearchMobile';
 
 export default function MenuNav({ loginAtivo }) {
