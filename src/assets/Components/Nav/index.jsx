@@ -19,7 +19,7 @@ export default function MenuNav({ loginAtivo }) {
 			}
 		>
 			<Link to="/">
-				<img src={logo} alt="logo Alura Geek" className="laptop:w-[120px]" />
+				<img src={logo} alt="logo Alura Geek" className="laptop:w-[176px]" />
 			</Link>
 			{openInput && <InputSearchMobile setOpenInput={setOpenInput} />}
 			<div className="hidden bg-background-input rounded-lg items-center px-2 py-2 tablet:flex">
