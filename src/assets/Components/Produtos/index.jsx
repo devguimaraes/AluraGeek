@@ -20,10 +20,14 @@ export default function Produtos({ itemProdutos, pageProdutos }) {
 					</>
 				)}
 			</div>
-			<div className="flex justify-around flex-wrap gap-4">
+			<div className="flex justify-around tablet:justify-between flex-wrap gap-4">
 				{itens.map((elemento, index) => (
 					<div key={index}>
-						<img src={elemento.imagem} alt={elemento.nome} />
+						<img
+							src={elemento.imagem}
+							alt={elemento.nome}
+							className="rounded-xl"
+						/>
 						<h3 className="text-corTituloProduto text-sm font-normal pt-2">
 							{elemento.nome}
 						</h3>
