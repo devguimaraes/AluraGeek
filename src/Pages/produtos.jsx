@@ -1,3 +1,4 @@
+import Contato from '../assets/Components/Contato';
 import MenuNav from '../assets/Components/Nav';
 import Produtos from '../assets/Components/Produtos';
 import produtos from '../assets/Data/produtos.json';
@@ -32,6 +33,8 @@ export default function PageProdutos() {
 					(produto) => produto.category.label === 'Diversos'
 				)}
 			/>
+
+			<Contato />
 		</>
 	);
 }
