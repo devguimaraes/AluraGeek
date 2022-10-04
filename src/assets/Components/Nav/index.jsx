@@ -42,7 +42,7 @@ export default function MenuNav({ loginAtivo }) {
 						: 'w-32 h-10 bg-white box-border border font-bold text-azul-botao text-sm border-azul-botao'
 				}
 			>
-				Login
+				<Link to="/login">Login</Link>
 			</button>
 			<FcSearch
 				size={24}
