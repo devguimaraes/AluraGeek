@@ -33,17 +33,18 @@ export default function MenuNav({ loginAtivo }) {
 				/>
 				<FcSearch size={24} />
 			</div>
-
-			<button
-				type="button"
-				className={
-					loginAtivo
-						? 'hidden'
-						: 'w-32 h-10 bg-white box-border border font-bold text-azul-botao text-sm border-azul-botao'
-				}
-			>
-				<Link to="/login">Login</Link>
-			</button>
+			<Link to="/login">
+				<button
+					type="button"
+					className={
+						loginAtivo
+							? 'hidden'
+							: 'w-32 h-10 bg-white box-border border font-bold text-azul-botao text-sm border-azul-botao'
+					}
+				>
+					Login
+				</button>
+			</Link>
 			<FcSearch
 				size={24}
 				className={openInput ? 'hidden tablet:hidden' : 'block tablet:hidden'}
