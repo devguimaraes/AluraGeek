@@ -3,6 +3,7 @@
 		"nome": "Darth Lego",
 		"imagem": "/img/starsWars/darthBlack_lego.png",
 		"preco": 60.0,
+		"id": 0,
 		"category": {
 			"id": 0,
 			"label": "Star Wars"
@@ -12,6 +13,7 @@
 		"nome": "Darth Robot",
 		"imagem": "/img/starsWars/darthBlackRobots_lego.png",
 		"preco": 60.0,
+		"id": 1,
 		"category": {
 			"id": 0,
 			"label": "Star Wars"
@@ -21,6 +23,7 @@
 		"nome": "Skill",
 		"imagem": "/img/starsWars/skill_starsWars.png",
 		"preco": 60.0,
+		"id": 2,
 		"category": {
 			"id": 0,
 			"label": "Star Wars"
@@ -30,6 +33,7 @@
 		"nome": "Skill Robot",
 		"imagem": "/img/starsWars/skillRobots_starsWars.png",
 		"preco": 60.0,
+		"id": 3,
 		"category": {
 			"id": 0,
 			"label": "Star Wars"
@@ -39,6 +43,7 @@
 		"nome": "Yoda",
 		"imagem": "/img/starsWars/yoda_starsWars.png",
 		"preco": 60.0,
+		"id": 4,
 		"category": {
 			"id": 0,
 			"label": "Star Wars"
@@ -48,6 +53,7 @@
 		"nome": "Yoda Baby",
 		"imagem": "/img/starsWars/yodaBaby_starsWars.png",
 		"preco": 60.0,
+		"id": 5,
 		"category": {
 			"id": 0,
 			"label": "Star Wars"
@@ -57,6 +63,7 @@
 		"nome": "Controle Xbox",
 		"imagem": "/img/Console/controleXbox_console.png",
 		"preco": 60.0,
+		"id": 6,
 		"category": {
 			"id": 1,
 			"label": "Console"
@@ -66,6 +73,7 @@
 		"nome": "X box",
 		"imagem": "/img/Console/xbox_console.png",
 		"preco": 60.0,
+		"id": 7,
 		"category": {
 			"id": 1,
 			"label": "Console"
@@ -75,6 +83,7 @@
 		"nome": "Game Boy",
 		"imagem": "/img/Console/gameboy_console.png",
 		"preco": 60.0,
+		"id": 8,
 		"category": {
 			"id": 1,
 			"label": "Console"
@@ -84,6 +93,7 @@
 		"nome": "Nitendo V - 1.0",
 		"imagem": "/img/Console/nitendoGame_console.png",
 		"preco": 60.0,
+		"id": 9,
 		"category": {
 			"id": 1,
 			"label": "Console"
@@ -93,6 +103,7 @@
 		"nome": "PlayStation 5",
 		"imagem": "/img/Console/ps5_console.png",
 		"preco": 60.0,
+		"id": 10,
 		"category": {
 			"id": 1,
 			"label": "Console"
@@ -102,6 +113,7 @@
 		"nome": "Nitendo Wii",
 		"imagem": "/img/Console/wii_console.png",
 		"preco": 60.0,
+		"id": 11,
 		"category": {
 			"id": 1,
 			"label": "Console"
@@ -111,6 +123,7 @@
 		"nome": "Console Atari",
 		"imagem": "/img/diversos/atari_diversos.png",
 		"preco": 60.0,
+		"id": 12,
 		"category": {
 			"id": 2,
 			"label": "Diversos"
@@ -120,6 +133,7 @@
 		"nome": "Camisa CNES",
 		"imagem": "/img/diversos/camisaCNES_diversos.png",
 		"preco": 60.0,
+		"id": 13,
 		"category": {
 			"id": 2,
 			"label": "Diversos"
@@ -129,6 +143,7 @@
 		"nome": "Urso Picachu",
 		"imagem": "/img/diversos/picachu_diversos.png",
 		"preco": 60.0,
+		"id": 14,
 		"category": {
 			"id": 2,
 			"label": "Diversos"
@@ -138,6 +153,7 @@
 		"nome": "Rádio Relógio",
 		"imagem": "/img/diversos/relogioAlarme_diversos.png",
 		"preco": 60.0,
+		"id": 15,
 		"category": {
 			"id": 2,
 			"label": "Diversos"
@@ -147,6 +163,7 @@
 		"nome": "Sonic",
 		"imagem": "/img/diversos/sonic_diversos.png",
 		"preco": 60.0,
+		"id": 16,
 		"category": {
 			"id": 2,
 			"label": "Diversos"
@@ -156,6 +173,7 @@
 		"nome": "Óculos VAR",
 		"imagem": "/img/diversos/var_diversos.png",
 		"preco": 60.0,
+		"id": 17,
 		"category": {
 			"id": 2,
 			"label": "Diversos"
