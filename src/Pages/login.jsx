@@ -4,8 +4,8 @@ import MenuNav from '../assets/Components/Nav';
 export default function Login() {
 	return (
 		<>
-			<MenuNav loginAtivo />
-			<div className="w-full flex justify-center text-center my-[90px]">
+			<MenuNav />
+			<div className="w-full flex justify-center text-center my-[120px]">
 				<div className="w-[275px] laptop:w-[423px] flex flex-col justify-center items-center ">
 					<h3 className="text-center text-[18px] text-corTituloProduto font-bold mb-8">
 						Iniciar Sessão

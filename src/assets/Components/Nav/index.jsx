@@ -6,7 +6,7 @@ import { FcSearch } from 'react-icons/fc';
 import logo from '/img/logo.svg';
 import InputSearchMobile from './InputSearchMobile';
 
-export default function MenuNav({ loginAtivo }) {
+export default function MenuNav({ loginAtivo, menuAdministrador }) {
 	// Abre o input search ao clicar no icone
 	const [openInput, setOpenInput] = useState(false);
 
@@ -33,18 +33,32 @@ export default function MenuNav({ loginAtivo }) {
 				/>
 				<FcSearch size={24} />
 			</div>
+
 			<Link to="/login">
 				<button
 					type="button"
 					className={
 						loginAtivo
-							? 'hidden'
-							: 'w-32 h-10 bg-white box-border border font-bold text-azul-botao text-sm border-azul-botao'
+							? 'w-32 h-10 bg-white box-border border font-bold text-azul-botao text-sm border-azul-botao rounded'
+							: 'hidden'
 					}
 				>
 					Login
 				</button>
 			</Link>
+			<Link to="/">
+				<button
+					type="button"
+					className={
+						menuAdministrador
+							? 'w-32 h-10 bg-white box-border border font-bold text-azul-botao text-sm border-azul-botao rounded'
+							: 'hidden'
+					}
+				>
+					Menu Administrador
+				</button>
+			</Link>
+
 			<FcSearch
 				size={24}
 				className={openInput ? 'hidden tablet:hidden' : 'block tablet:hidden'}

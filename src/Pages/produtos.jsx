@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Contato from '../assets/Components/Contato';
 import MenuNav from '../assets/Components/Nav';
 import Produtos from '../assets/Components/Produtos';
@@ -11,9 +12,11 @@ export default function PageProdutos() {
 				<h3 className="text-2xl text-corTituloProduto font-bold">
 					Todos os Produtos
 				</h3>
-				<button className="botaoAzul" type="button">
-					Adicionar Produto
-				</button>
+				<Link to="/adicionarprodutos">
+					<button className="botaoAzul" type="button">
+						Adicionar Produto
+					</button>
+				</Link>
 			</div>
 			<Produtos
 				pageProdutos
