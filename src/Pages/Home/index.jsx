@@ -8,7 +8,7 @@ export default function Home() {
 	return (
 		<>
 			<header>
-				<MenuNav />
+				<MenuNav loginAtivo />
 				<Header />
 			</header>
 			<main>
