@@ -20,6 +20,7 @@ export default function DescricaoProduto() {
 	useEffect(() => {
 		if (produtoSelecionado !== produtoDestaque) {
 			setProdutoDestaque([produtoSelecionado]);
+			window.scrollTo(0, 0);
 		}
 
 		if (
