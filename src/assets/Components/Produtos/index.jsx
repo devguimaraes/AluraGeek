@@ -1,9 +1,17 @@
 /* eslint-disable react/no-array-index-key */
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaChevronRight } from 'react-icons/fa';
 
 export default function Produtos({ itemProdutos, pageProdutos }) {
 	const itens = [...itemProdutos];
+	const navigate = useNavigate();
+
+	function redirecionaProduto(params) {
+		navigate(`/descricaoProduto/${params.id}`, {
+			state: { params },
+			replace: true,
+		});
+	}
 
 	return (
 		<div className="flex flex-col p-4">
@@ -42,6 +50,9 @@ export default function Produtos({ itemProdutos, pageProdutos }) {
 							text-sm
 							text-azul-botao
 							font-bold"
+							onClick={() => {
+								redirecionaProduto(elemento);
+							}}
 						>
 							Ver Produto
 						</button>
