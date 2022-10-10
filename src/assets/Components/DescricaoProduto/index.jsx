@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+/* eslint-disable react/no-array-index-key */
+import { useEffect, useLayoutEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import produtosData from '../../Data/produtos.json';
 import Contato from '../Contato';
@@ -17,6 +18,10 @@ export default function DescricaoProduto() {
 
 	if (!produtoSelecionado) return <Page404 />;
 
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+	});
+
 	useEffect(() => {
 		if (produtoSelecionado !== produtoDestaque) {
 			setProdutoDestaque([produtoSelecionado]);
@@ -34,9 +39,12 @@ export default function DescricaoProduto() {
 		<>
 			<MenuNav />
 			<div>
-				{produtoDestaque.map((elementos) => (
+				{produtoDestaque.map((elementos, index) => (
 					<>
-						<div className="flex flex-col justify-center tablet:flex-row tablet:p-8 laptop:p-16">
+						<div
+							key={index}
+							className="flex flex-col justify-center tablet:flex-row tablet:p-8 laptop:p-16"
+						>
 							<img
 								src={elementos.imagem}
 								className="w-full rounded-xl tablet:w-5/12"
@@ -56,7 +64,7 @@ export default function DescricaoProduto() {
 							</div>
 						</div>
 						<div className="flex flex-col flex-wrap my-4 tablet:p-8 laptop:p-16 ">
-							<h3 className="px-4 text-2xl  laptop:text-[32px] laptop:pb-8 text-corTituloProduto font-bold">
+							<h3 className="px-4 text-2xl py-8 laptop:text-[32px] laptop:pb-8 text-corTituloProduto font-bold">
 								Produtos Similares
 							</h3>
 							<Produtos
