@@ -1,10 +1,18 @@
 /* eslint-disable react/no-array-index-key */
 import { Link, useNavigate } from 'react-router-dom';
 import { FaChevronRight } from 'react-icons/fa';
+import { useEffect, useLayoutEffect } from 'react';
 
 export default function Produtos({ itemProdutos, pageProdutos }) {
 	const itens = [...itemProdutos];
 	const navigate = useNavigate();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	});
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0);
+	});
 
 	function redirecionaProduto(params) {
 		navigate(`/descricaoProduto/${params.id}`, {
