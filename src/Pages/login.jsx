@@ -1,9 +1,12 @@
+/* eslint-disable no-alert */
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import Contato from '../assets/Components/Contato';
 import MenuNav from '../assets/Components/Nav';
 
 export default function Login() {
+	const navigate = useNavigate();
 	const {
 		register,
 		reset,
@@ -11,19 +14,21 @@ export default function Login() {
 		formState: { errors },
 	} = useForm();
 
-	const [data] = useState({ email: '', senha: '' });
+	const [data] = useState({ email: 'admin@admin.com', senha: '123456789' });
 
 	const onSubmit = (dados) => {
-		data.email = dados.email;
-		data.senha = dados.senha;
-
-		reset();
-		alert('Login efetuado com sucesso');
+		if (dados.email === data.email && dados.senha === data.senha) {
+			alert('Login efetuado com sucesso');
+			navigate('/produtos', { replace: false });
+		} else {
+			alert('Login e senha não conferem');
+			reset();
+		}
 	};
 
 	useEffect(() => {
-		console.log(data);
-	});
+		reset();
+	}, [data.email, data.senha]);
 
 	return (
 		<>
@@ -53,11 +58,9 @@ export default function Login() {
 									className="w-[274px] laptop:w-[423px] py-3 gap-1"
 									placeholder="Escreva seu e-mail"
 								/>
-								{errors.email && (
-									<p className="text-red-700 font-semibold">
-										{errors.email?.message}
-									</p>
-								)}
+								<p className="text-red-700 font-semibold">
+									{errors.email?.message}
+								</p>
 							</label>
 						</div>
 						<br />
