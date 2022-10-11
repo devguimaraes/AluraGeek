@@ -23,9 +23,9 @@ export default function DescricaoProduto() {
 	});
 
 	useEffect(() => {
+		window.scrollTo(0, 0);
 		if (produtoSelecionado !== produtoDestaque) {
 			setProdutoDestaque([produtoSelecionado]);
-			window.scrollTo(0, 0);
 		}
 
 		if (
