@@ -1,16 +1,13 @@
 /* eslint-disable react/no-array-index-key */
 import { Link, useNavigate } from 'react-router-dom';
 import { FaChevronRight } from 'react-icons/fa';
-import { useEffect, useLayoutEffect } from 'react';
+import { useEffect } from 'react';
 
 export default function Produtos({ itemProdutos, pageProdutos }) {
-	const itens = [...itemProdutos];
+	const produtos = [...itemProdutos];
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		window.scrollTo(0, 0);
-	});
-	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
 	});
 
@@ -27,7 +24,7 @@ export default function Produtos({ itemProdutos, pageProdutos }) {
 				{!pageProdutos && (
 					<>
 						<h2 className="text-2xl text-corTituloProduto font-bold">
-							{itens[0].category.label}
+							{produtos[0].category.label}
 						</h2>
 						<div className="flex items-center gap-2  text-sm text-azul-botao font-bold">
 							<Link to="/produtos">Ver Tudo</Link>
@@ -37,18 +34,18 @@ export default function Produtos({ itemProdutos, pageProdutos }) {
 				)}
 			</div>
 			<div className="flex justify-around tablet:justify-between flex-wrap gap-4">
-				{itens.map((elemento, index) => (
+				{produtos.map((itemProduto, index) => (
 					<div key={index}>
 						<img
-							src={elemento.imagem}
-							alt={elemento.nome}
+							src={itemProduto.imagem}
+							alt={itemProduto.nome}
 							className="rounded-xl"
 						/>
 						<h3 className="text-corTituloProduto text-sm font-normal pt-2">
-							{elemento.nome}
+							{itemProduto.nome}
 						</h3>
 						<span className="text-black font-semibold">
-							R${elemento.preco.toFixed(2)}
+							R${itemProduto.preco.toFixed(2)}
 						</span>
 						<button
 							type="button"
@@ -59,7 +56,7 @@ export default function Produtos({ itemProdutos, pageProdutos }) {
 							text-azul-botao
 							font-bold"
 							onClick={() => {
-								redirecionaProduto(elemento);
+								redirecionaProduto(itemProduto);
 							}}
 						>
 							Ver Produto
