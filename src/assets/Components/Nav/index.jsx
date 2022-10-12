@@ -34,7 +34,7 @@ export default function MenuNav({
 			{openInput && (
 				<div className="z-10 flex flex-col bg-background-input rounded-lg items-center  tablet:hidden ">
 					<input
-						className="bg-background-input gap-2 rounded-lg w-[300px] h-10 mx-auto text-[14px] font-semibold"
+						className="bg-background-input gap-2 rounded-lg w-[300px] h-10 mx-auto text-[14px] font-semibold placeholder:px-4"
 						type="search"
 						placeholder="O que deseja encontrar?"
 						value={pesquisaUsuario}
@@ -50,7 +50,7 @@ export default function MenuNav({
 			)}
 			<div className="hidden bg-background-input rounded-lg items-center px-2 py-2 tablet:flex">
 				<input
-					className="bg-background-input gap-2 mx-auto rounded-lg w-54 text-[14px] font-semibold tablet:w-64 laptop:w-[400px]"
+					className="bg-background-input gap-2 mx-auto rounded-lg w-54 text-[14px] font-semibold placeholder:px-4 tablet:w-64 laptop:w-[400px]"
 					type="search"
 					placeholder="O que deseja encontrar?"
 					value={pesquisaUsuario}
