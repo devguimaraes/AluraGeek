@@ -19,6 +19,12 @@ export default function DescricaoProduto() {
 	if (!produtoSelecionado) return <Page404 />;
 
 	useEffect(() => {
+		setTimeout(() => {
+			window.scrollTo(0, 0);
+		}, 1000);
+	});
+
+	useEffect(() => {
 		window.scrollTo(0, 0);
 		if (produtoSelecionado !== produtoDestaque) {
 			setProdutoDestaque([produtoSelecionado]);
