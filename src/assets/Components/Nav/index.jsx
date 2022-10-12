@@ -1,15 +1,25 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable import/no-absolute-path */
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FcSearch } from 'react-icons/fc';
-import logo from '/img/logo.svg';
-import InputSearchMobile from './InputSearchMobile';
 
-export default function MenuNav({ loginAtivo, menuAdministrador }) {
+import logo from '/img/logo.svg';
+
+export default function MenuNav({
+	setBusca,
+	busca,
+	loginAtivo,
+	menuAdministrador,
+}) {
 	// Abre o input search ao clicar no icone
 	const [openInput, setOpenInput] = useState(false);
+	const [pesquisaUsuario, setPesquisaUsuario] = useState('');
 
+	useEffect(() => {
+		console.log(pesquisaUsuario);
+	}, [pesquisaUsuario]);
 	return (
 		<div
 			className={
@@ -21,14 +31,34 @@ export default function MenuNav({ loginAtivo, menuAdministrador }) {
 			<Link to="/">
 				<img src={logo} alt="logo Alura Geek" className="laptop:w-[176px]" />
 			</Link>
-			{openInput && <InputSearchMobile setOpenInput={setOpenInput} />}
+			{openInput && (
+				<div className="z-10 flex flex-col bg-background-input rounded-lg items-center  tablet:hidden ">
+					<input
+						className="bg-background-input gap-2 rounded-lg w-[300px] h-10 mx-auto text-[14px] font-semibold"
+						type="search"
+						placeholder="O que deseja encontrar?"
+						value={pesquisaUsuario}
+						onBlur={() => {
+							setOpenInput(false);
+						}}
+						onChange={(evento) => {
+							setPesquisaUsuario(evento.target.value);
+						}}
+					/>
+					<FcSearch size={24} className="hidden tablet:block" />
+				</div>
+			)}
 			<div className="hidden bg-background-input rounded-lg items-center px-2 py-2 tablet:flex">
 				<input
 					className="bg-background-input gap-2 mx-auto rounded-lg w-54 text-[14px] font-semibold tablet:w-64 laptop:w-[400px]"
 					type="search"
 					placeholder="O que deseja encontrar?"
+					value={pesquisaUsuario}
 					onBlur={() => {
 						setOpenInput(false);
+					}}
+					onChange={(evento) => {
+						setPesquisaUsuario(evento.target.value);
 					}}
 				/>
 				<FcSearch size={24} />
