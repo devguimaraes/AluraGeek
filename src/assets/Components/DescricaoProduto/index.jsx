@@ -1,5 +1,5 @@
 /* eslint-disable react/no-array-index-key */
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import produtosData from '../../Data/produtos.json';
 import Contato from '../Contato';
@@ -17,10 +17,6 @@ export default function DescricaoProduto() {
 	const [produtoDestaque, setProdutoDestaque] = useState([produtoSelecionado]);
 
 	if (!produtoSelecionado) return <Page404 />;
-
-	useLayoutEffect(() => {
-		window.scrollTo(0, 0);
-	});
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
