@@ -7,6 +7,8 @@ import MenuNav from '../assets/Components/Nav';
 
 export default function Login() {
 	const navigate = useNavigate();
+	const [data] = useState({ email: 'admin@admin.com', senha: '123456789' });
+
 	const {
 		register,
 		reset,
@@ -14,15 +16,12 @@ export default function Login() {
 		formState: { errors },
 	} = useForm();
 
-	const [data] = useState({ email: 'admin@admin.com', senha: '123456789' });
-
 	const onSubmit = (dados) => {
 		if (dados.email === data.email && dados.senha === data.senha) {
 			alert('Login efetuado com sucesso');
 			navigate('/produtos', { replace: false });
 		} else {
 			alert('Login e senha não conferem');
-			reset();
 		}
 	};
 
